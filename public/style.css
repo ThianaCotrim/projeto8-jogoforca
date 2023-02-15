@@ -36,8 +36,16 @@ button {
     font-size: 20px;
 } 
 
-.underlines {
-    font-size: 44px;
+.wor {
+    color: #000000;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2rem;
+    border-bottom: 0.1em solid black;
+  
+
+    
 } 
 
 .letters {

@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: 1000px;
+    height: 467px;
+    margin-top: 59px;
+    margin-left: 38px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image img {
+    width: 400px;
+    height: 467px;
+}
+
+ .escolherpalavra {
+   margin-right: 60px;
+} 
+
+button {
+    margin-left: 120px;
+    margin-top: 89px;
+    width: 200px;
+    height: 60px;
+    margin-bottom: 230px;
+    background-color:#27AE60;
+    border-radius: 8px;
+    border: 1px solid #27AE60;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+} 
+
+.underlines {
+    font-size: 44px;
+} 
+
+.letters {
+    width: 664px;
+    height: 91px;
+    margin-top: 60px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.letters .box {
+    width: 40px;
+    height: 40px;
+    background-color: #798A9F;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #39739D;
+    border: 1px solid #7AA7C7; 
+}
+
+.line1{
+    display: flex;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+
+.line2 {
+    display: flex;
+    border-radius: 8px;
+    justify-content: space-between;
+}

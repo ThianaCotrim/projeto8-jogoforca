@@ -2,11 +2,7 @@
 function App() {
   return (
    <div>
- dadasdasdas
- asdasdasd
- asdasdasdasdasdasd
-
- asdasdasdasd
+  Jogo da Forca!
     </div>
   );
 }

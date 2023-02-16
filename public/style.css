@@ -21,7 +21,7 @@ body {
    margin-right: 60px;
 } 
 
-button {
+.escolherpalavra button {
     margin-left: 120px;
     margin-top: 89px;
     width: 200px;
@@ -36,19 +36,35 @@ button {
     font-size: 20px;
 } 
 
-.wor {
+.word {
     color: #000000;
     font-family: 'Noto Sans', sans-serif;
     font-size: 50px;
     font-weight: 700;
     letter-spacing: 2rem;
-    border-bottom: 0.1em solid black;
-  
-
-    
 } 
 
-.letters {
+.warpper {
+    margin-top: 40px;
+    margin-left: 250px;
+    width: 600px;
+  
+  
+   
+}
+
+.warpper button {
+    background-color: #7AA7C7;
+    width: 40px;
+    height: 40px;
+    color: #39739D;
+    border: 1px solid #7AA7C7;
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    
+}
+/* .letters {
     width: 664px;
     height: 91px;
     margin-top: 60px;
@@ -56,9 +72,9 @@ button {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-}
+} */
 
-.letters .box {
+/* .letters .box {
     width: 40px;
     height: 40px;
     background-color: #798A9F;
@@ -72,9 +88,9 @@ button {
     font-size: 16px;
     color: #39739D;
     border: 1px solid #7AA7C7; 
-}
+} */
 
-.line1{
+/* .line1{
     display: flex;
     border-radius: 8px;
     justify-content: space-between;
@@ -84,4 +100,4 @@ button {
     display: flex;
     border-radius: 8px;
     justify-content: space-between;
-}
+} */

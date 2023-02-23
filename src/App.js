@@ -2,7 +2,6 @@ import { useState } from "react"
 import Jogo from "./components/Jogo"
 import Letras from "./components/Letras"
 
-import image0 from "./images/forca0.png"
 
 function App() {
  

@@ -1,24 +1,16 @@
-import RenderPalavra from "./RenderPalavra"
 
-const Jogo = () => {
+const Jogo = (props) => {
 
-   
     return (
-        <div className="image">
-            <img src="./img/forca0.png" />
-            <div className="escolherpalavra">
-                <button>Escolher palavra</button>
-
-                < RenderPalavra />
-                
-              
+        <>
+            <div class="game">
+                <button class="escolher" onClick={props.ComecarJogo}>Escolher Palavra</button>
             </div>
-                
-           
-        </div>
+            <div class="seletorjogo">
+                <div class="letter-game"> <div class="letras"></div></div>
+            </div>
+        </>
     )
 }
 
 export default Jogo
-
- {/* <div class="underlines">_ _ _ _ _ _ _ _ _ _</div> */}

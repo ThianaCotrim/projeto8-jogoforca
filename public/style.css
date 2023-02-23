@@ -66,5 +66,12 @@
     border: none;
     position: absolute;
     top: 89px;
-    right: 53px;
+    right: 400px;
 }
+
+.game img{
+    width: 400px;
+    height: 466.67px;
+    margin-top: 60px;
+    margin-left: 400px;
+    }

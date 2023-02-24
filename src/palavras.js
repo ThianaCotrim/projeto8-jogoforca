@@ -21,7 +21,9 @@ const palavras = [
     "uva", "universo", "unanimidade", "ubuntu", "universidade", "urso", "uivar", "unir",
     "vela", "valeta", "vacilo", "valor", "vagem", "vadiagem", "vaca", "valentia", "vidro", "valsa",
     "xadrez", "xilofone", "xarope", "xenofobia", "xereta", "xerife", "xaveco", "xixi", "xale",
-    "zebra", "zagueiro", "zero", "zoeira", "zepelim", "zinco", "zumbido"
+    "zebra", "zagueiro", "zero", "zoeira", "zepelim", "zinco", "zumbido","elefante", "mosquito", "nordeste", 
+    "amarelo", "felicidade", "amizade", "saxofone", "garganta", "galinha", "pattins", "melancia", "festa", "carnaval", 
+    "mamao", "peixe", "girafa"
 ]
 
 export default palavras

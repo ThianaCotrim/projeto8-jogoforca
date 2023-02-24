@@ -3,12 +3,12 @@ const Jogo = (props) => {
 
     return (
         <>
-            <div class="game">
-                <img src="./imagem/forca0.png"></img>
-                <button class="escolher" onClick={props.ComecarJogo}>Escolher Palavra</button>
+            <div class="jogo">
+            <img src={props.images[props.resultado]} class={`${props.imagem}`}></img>
+                <button onClick={props.comecarJogo} disabled={props.desativado} class="escolher">Escolher Palavra</button>
             </div>
             <div class="seletorjogo">
-                <div class="letter-game"> <div class="letras"></div></div>
+            {props.mostrarPalavra.map((x) => ( <div class="letras"> <div class="letrinhas">{x}</div></div> ))}
             </div>
         </>
     )

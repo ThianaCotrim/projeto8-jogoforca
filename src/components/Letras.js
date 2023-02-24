@@ -12,16 +12,14 @@
         return (
             <div >
                 <div class="container">
-                    <div class="letras">
-                        {alfabetomaiusculo.map((letters) => (
-                        <button class={`box ${props.habilitarLetra}`}> 
-                        {letters} </button>))}
-                        
+                    <div class="let">
+                        {alfabetomaiusculo.map((l) => (
+                        <button class={`box ${props.tentativaLetra.includes(l) && "desabilitado"} ${props.habilitarLetra}`}
+                        onClick={() => {props.palavra(l)}}>{l} </button>))}
                     </div>
                 </div>
             </div>
         )
-   
 }
 
 

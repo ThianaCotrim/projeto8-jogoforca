@@ -14,8 +14,11 @@
                 <div class="container">
                     <div class="let">
                         {alfabetomaiusculo.map((l) => (
-                        <button class={`box ${props.tentativaLetra.includes(l) && "desabilitado"} ${props.habilitarLetra}`}
-                        onClick={() => {props.palavra(l)}}>{l} </button>))}
+                        <button data-test="letter" class={`box ${props.tentativaLetra.includes(l) && "desabilitado"} 
+                        ${props.habilitarLetra}`}
+                        onClick={() => {props.palavra(l)}}
+                        disabled = {props.disabled}>{l} 
+                        </button>))}
                     </div>
                 </div>
             </div>

@@ -13,7 +13,6 @@ import image6 from "./images/forca6.png"
 
 function App() {
   
-
   const [habilitarLetra, setHabilitarLetra] = useState("desabilitado")
   const [imagem, setImagem] = useState("none")
   const [renderizarPalavra, setRenderizarPalavra] = useState([])
@@ -22,8 +21,8 @@ function App() {
   const [jogoComeca, setJogoComeca] = useState(0)
   const [resultado, setResultado] = useState(0)
   const [mostrarPalavra, setMostrarPalavra] = useState([])
-
-
+  const [disabled, setDisabled] = useState (true)
+  const [cor, setCor] = useState ("letrinhas")
 
   const images = [image0, image1, image2, image3, image4, image5, image6]
 
@@ -38,8 +37,7 @@ function App() {
     desativado()
     imagens()
     setJogoComeca(1)
-   
-
+    setDisabled(false)
   }
 
   const desabilitarLetra = () => {
@@ -51,11 +49,8 @@ function App() {
     
   }
 
- 
-
   const desativado = () => {
     setDesativarPalavra(true)
-    
   }
 
   const imagens = () => {
@@ -104,14 +99,15 @@ function App() {
   const jogoFinalizado = () => {
     if (resultado >= 5) {
       alert("Infelizmente você perdeu, não desista, tente novamente!")
-      
+      setDisabled(true)
+      setCor ("vermelho")
     }
     else if (resultado < 6 && !mostrarPalavra.includes("_")) {
       alert("Parabéns!!!! Você venceu!!")
-     
+      setDisabled(true)
+      setCor ("verde")
     }
   }
-
 
   return (
     <>
@@ -124,6 +120,8 @@ function App() {
             images={images} 
             tentativaLetra={tentativaLetra} 
             resultado={resultado} 
+            disabled={disabled}
+            cor = {cor}
             />
 
       <Letras habilitarLetra={habilitarLetra} 
@@ -131,6 +129,7 @@ function App() {
               tentativaLetra={tentativaLetra} 
               jogoComeca={jogoComeca} 
               resultado={resultado} 
+              disabled={disabled}
             />
     </>
   );

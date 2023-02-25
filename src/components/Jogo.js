@@ -8,7 +8,8 @@ const Jogo = (props) => {
                 <button data-test="choose-word" onClick={props.comecarJogo} disabled={props.desativado} class="escolher">Escolher Palavra</button>
             </div>
             <div data-test="word" class="seletorjogo">
-            {props.mostrarPalavra.map((x) => ( <div class="letras"><div class={`letrinhas ${props.cor}`}>{x}</div></div> ) ) }
+            {props.mostrarPalavra.map((x) => ( <div class="letras"><div class={`letrinhas ${props.cor}`}>{x}</div></div> ))}
+            
             </div>
         </>
     )

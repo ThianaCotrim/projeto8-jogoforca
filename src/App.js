@@ -63,44 +63,55 @@ function App() {
     setRenderizarPalavra(novoRenderizarPalavra.split(''))
 
     tracinho = Array(novoRenderizarPalavra.length).fill('_')
-    setMostrarPalavra(tracinho)
+    setMostrarPalavra(tracinho) 
   }
 
   const palavra = (todasasletras) => {
+    console.log(todasasletras)
     let somErro = resultado
+    console.log(resultado)
     letraQualquer = todasasletras.toLowerCase();
 
     const palavraTestada = [...tentativaLetra]
     setTentativaLetra([...palavraTestada, todasasletras])
 
-    const aletorio = renderizarPalavra.length
+    
 
-    for (let i = 0; i < aletorio; i++) {
+    for (let i = 0; i < renderizarPalavra.length; i++) {
       const depois = renderizarPalavra[i]
 
       if (depois.includes(letraQualquer)) {
         mostrarPalavra.splice(i, 1, depois)
+        console.log(mostrarPalavra)
       }
 
       else if (!renderizarPalavra.includes(letraQualquer)) {
         somErro = somarErro()
+        
+        
       }
     }
 
     jogoFinalizado(somErro)
   }
 
+
+
   const somarErro = () => {
+    
     const somErro = resultado + 1;
     setResultado(somErro);
     return somErro;
   }
+
+
 
   const jogoFinalizado = () => {
     if (resultado >= 5) {
       alert("Infelizmente você perdeu, não desista, tente novamente!")
       setDisabled(true)
       setCor ("vermelho")
+     
     }
     else if (resultado < 6 && !mostrarPalavra.includes("_")) {
       alert("Parabéns!!!! Você venceu!!")
@@ -130,6 +141,7 @@ function App() {
               jogoComeca={jogoComeca} 
               resultado={resultado} 
               disabled={disabled}
+              setDisabled ={setDisabled}
             />
     </>
   );

@@ -29,7 +29,6 @@ function App() {
   let tracinho = [];
   let letraQualquer = "";
   
-
   const comecarJogo = () => {
 
     desabilitarLetra()
@@ -51,7 +50,6 @@ function App() {
       setHabilitarLetra("")
     }
     setHabilitarLetra("habilitado")
-    
   }
 
   const desativado = () => {
@@ -61,7 +59,6 @@ function App() {
   const imagens = () => {
     setImagem("")
   }
-
 
   const palavraEscolhida = () => {
     const novoRenderizarPalavra = palavras[Math.floor(Math.random() * palavras.length)];
@@ -80,7 +77,6 @@ function App() {
     const palavraTestada = [...tentativaLetra]
     setTentativaLetra([...palavraTestada, todasasletras])
 
-    
 
     for (let i = 0; i < renderizarPalavra.length; i++) {
       const depois = renderizarPalavra[i]
@@ -93,13 +89,11 @@ function App() {
       else if (!renderizarPalavra.includes(letraQualquer)) {
         somErro = somarErro()
         
-        
       }
     }
 
     jogoFinalizado(somErro)
   }
-
 
   const somarErro = () => {
     
@@ -108,18 +102,19 @@ function App() {
     return somErro;
   }
 
-
   const jogoFinalizado = () => {
     if (resultado >= 5) {
       alert("Infelizmente você perdeu, não desista, tente novamente!")
       setDisabled(true)
       setCor ("vermelho")
-     
+      setMostrarPalavra(renderizarPalavra)
+
     }
     else if (resultado < 6 && !mostrarPalavra.includes("_")) {
       alert("Parabéns!!!! Você venceu!!")
       setDisabled(true)
       setCor ("verde")
+      
     }
   }
 

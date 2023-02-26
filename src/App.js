@@ -38,6 +38,11 @@ function App() {
     imagens()
     setJogoComeca(1)
     setDisabled(false)
+    setCor ("letrinhas")
+    setHabilitarLetra ("habilitado")
+    setResultado(0)
+    setJogoComeca(0)
+    setTentativaLetra([])
   }
 
   const desabilitarLetra = () => {
@@ -96,14 +101,12 @@ function App() {
   }
 
 
-
   const somarErro = () => {
     
     const somErro = resultado + 1;
     setResultado(somErro);
     return somErro;
   }
-
 
 
   const jogoFinalizado = () => {

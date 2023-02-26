@@ -27,9 +27,7 @@
                     </div>
                 </div>
             </div>
-        )
-}
-
+        )}
 
 const RenderizarBotao = (props) => {
     return (
